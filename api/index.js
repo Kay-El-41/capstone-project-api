@@ -2,7 +2,7 @@ let express = require("express");
 let path = require("path");
 const cors = require("cors");
 const { Pool } = require("pg");
-const { DATABASE_URL } = process.env;
+const { DATABASE_URL, SECRET_KEY } = process.env;
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
